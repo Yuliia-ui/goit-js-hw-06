@@ -1,7 +1,7 @@
 import users from '../users.js';
 
 const getUsersWithFriend = (users, friendName) => {
-  // твой код
+  return users.filter(user => user.friends.includes(friendName));
 };
 
 console.log(getUsersWithFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
